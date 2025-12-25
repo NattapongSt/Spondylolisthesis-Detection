@@ -16,7 +16,7 @@ Spondylolisthesis detection from **X‑ray images** using a YOLO-based oriented 
 ## Model performance
 
 <div align="center">
-  <img src="EX_image/performance_model/output_image.jpg" alt="model performance" width="600" style="border-radius:12px;">
+  <img src="EX_image/performance_model/output_image.jpg" alt="model performance" width="500" style="border-radius:12px;">
 </div>
 
 | Model | Mean Precision | Mean Recall | mAP@0.5 | mAP@0.5:0.95 |
@@ -71,7 +71,7 @@ The `main.py` file supports two model types: `pytorch` and `onnx`.
 
 ## Example outputs
 | Class | X‑ray film | Diagnostic image |
-|---|---:|---:|
+|---|---|---|
 | `Normal` | <img src="EX_image/x-ray-film/0001-F-037Y0.jpg" alt="normal_film" height="240"> | <img src="EX_image/diagonostic/Normal.jpg" alt="normal_diag" height="240"> |
 | `Right Laterolisthesis` | <img src="EX_image/x-ray-film/0238-F-067Y0.jpg" alt="right_film" height="240"> | <img src="EX_image/diagonostic/Right.jpg" alt="right_diag" height="240"> |
 | `Left Laterolisthesis` | <img src="EX_image/x-ray-film/0223-F-063Y0.jpg" alt="left_film" height="240"> | <img src="EX_image/diagonostic/Left.jpg" alt="left_diag" height="240"> |
