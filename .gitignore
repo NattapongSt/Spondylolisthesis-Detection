@@ -1,0 +1,12 @@
+*.pt
+venv/
+__pycache__/
+AP/
+labels_normalized/
+labels_test/
+labels_train/
+labels_val/
+runs/
+New AP/
+wandb/
+*onnx
