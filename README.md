@@ -16,7 +16,7 @@ Spondylolisthesis detection from **X‑ray images** using a YOLO-based oriented 
 ## Model performance
 
 <div align="center">
-  <img src="EX_image/performance_model/output_image.jpg" alt="model performance" width="500" style="border-radius:12px;">
+  <img src="EX_image/performance_model/output_image.jpg" alt="model performance" width="600" style="border-radius:12px;">
 </div>
 
 | Model | Mean Precision | Mean Recall | mAP@0.5 | mAP@0.5:0.95 |
