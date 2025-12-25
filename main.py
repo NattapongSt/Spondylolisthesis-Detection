@@ -178,15 +178,21 @@ class sopndylolisthesis_detection:
                   
 if __name__ == "__main__":
 
-    img_path = 'AP/0223-F-063Y0.jpg'
+    img_path = 'AP\\0223-F-063Y0.jpg'
     img = cv2.imread(img_path)
+    
     if img is None:
         raise FileNotFoundError(f"Image not found: {img_path}")
+    
     spondy = sopndylolisthesis_detection(model_type="onnx")
     out, image, l, r = spondy.detection(img)
+    
     if image is not None:
-        h, w = image.shape[:2]
-        image = cv2.resize(image, (h//2, w//2))
+        # h, w = image.shape[:2]
+        # image = cv2.resize(image, (h//2, w//2))
+        
+        # debug display
+        # cv2.imwrite("EX_image/diagonostic/Left.jpg", image)
         cv2.imshow('result', image)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
